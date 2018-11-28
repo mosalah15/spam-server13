@@ -37,7 +37,11 @@ var timer = setTimeout(timerFunc, 1000);
         message.channel.send(args.slice(1, args.length).join(" "))
     }
 });
-if(command == "allsay") {
+client.on("message", function(message) {
+    var args = message.content.split(/ +/g);
+    var command = args.shift()
+
+    if(command == "allsay") {
         message.channel.send(args.slice(1, args.length).join(" "))
     }
 });
