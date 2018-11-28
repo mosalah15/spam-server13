@@ -37,4 +37,8 @@ var timer = setTimeout(timerFunc, 1000);
         message.channel.send(args.slice(1, args.length).join(" "))
     }
 });
+if(command == "allsay") {
+        message.channel.send(args.slice(1, args.length).join(" "))
+    }
+});
 client.login(process.env.BOT_TOKEN);
